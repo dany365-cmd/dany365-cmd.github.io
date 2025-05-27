@@ -1,0 +1,190 @@
+/* === ESTILOS BASE === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: #cceeff; /* Cambiar de blanco a azul claro */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    padding: 1.0rem 0; /* Aumentar padding vertical */
+}
+
+header .encabezado {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+}
+
+header .logo {
+    height: 60px;
+    width: auto;
+}
+
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 3.0rem;
+    justify-content: center;
+    background-color: #cceeff;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+    padding: 0.5rem 1.0rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    background-color: #b3e0ff;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* === PRODUCTOS === */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #b3e0ff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.producto h3 {
+    margin-bottom: 0.5rem;
+}
+
+.producto button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #005f99;
+}
+
+.precio {
+    display: none;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #007acc;
+}
+
+/* === FADE SOLO AL CONTENIDO PRINCIPAL === */
+.fade-contenido {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-contenido-activo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #cceeff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    color: #333;
+}
+
+nav {
+    position: relative;
+}
+
+.logo-nav {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+}
+
+.img-producto {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    min-height: 40px; /* para que todas queden parejas */
+}
